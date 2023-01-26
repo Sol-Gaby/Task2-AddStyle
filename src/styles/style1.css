@@ -9,7 +9,6 @@ header{
     display: grid;
 }
 figure{
-    margin: 0px;
     display: grid;
     grid-row: 3/3;
     justify-content: end;
