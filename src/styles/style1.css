@@ -1,4 +1,5 @@
 /* siempre poner este estilo general para anular las configuracion que tiene cada clase por defecto */
+/* terminado */
 * {
     margin: 0%;
     padding: 0%;
@@ -54,6 +55,7 @@ a{
 a:hover{
     color: var(--color2);
     background-color: var(--color1);
+    border-radius: 1rem;
     margin: 0.9rem;
     /* despus quitar este margin que da ilucion de animacion */
 }
@@ -107,7 +109,7 @@ h4{
 }
 .redes{
     justify-items: center;
-    text-align: center;
+        text-align: center;
 }
 .redes a{
     padding: 0.5rem;
