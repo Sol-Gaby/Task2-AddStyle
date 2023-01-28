@@ -1,43 +1,44 @@
-/* segunda opcion que pide el cliente< */
-/* Por hacer: hay que poner el h1 por encima de la imagen y el logo al costado del article, segun como se muestra en el diseño */
+/* segunda opcion que pide el cliente */
+/* terminado */
 * {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    font-family:'Comic Neue', cursive;
 }
 :root{
 --color1:rgb(255, 204, 0);
---color2:rgba(7, 167, 176, 0.582);
+--color2:rgba(7, 168, 176, 0.788);
 --back1:rgb(0, 167, 162);
+--back2:rgb(255, 224, 99);
 }
 header {
-    display: grid;
-    grid-template-areas: 1/6;
+    /* display: grid; */
+    /* grid-template-areas: 1/6; */
     width: 100%;
 }
-figure{
-    display: grid;
-    grid-row: 3/3;
-    justify-content: end;
-    grid-column: 2/2;
-    justify-items: end;
+h1 {
+    /* margin: 0.5em; */
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    color: var(--color1);
+    text-shadow: 0.5rem 0.5rem 0.1rem black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: absolute;
+    top: 0px;
+    /* grid-row: 1/1; */
 }
-img{
-    width: 6rem;
-    height: 6rem;
-}
-figure>.fondo{
-    background-image: url("/src/img/hockey1.jpg");
+header>figure{
     object-fit: contain;
 }
-h1 {
-    margin: 0.5em;
-    font-size: 2.5rem;
-    grid-row: 1/1;
-}
-header>nav{
+nav{
     margin: 1rem;
-    display: flex;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    grid-row: 1/3;
     align-items: flex-start;
 }
 nav>a{
@@ -55,15 +56,15 @@ a{
 a:hover{
     color: var(--color2);
     background-color: var(--color1);
-    margin: 0.8rem;
+    margin: 0.9rem;
     /* despus quitar este margin que da ilucion de animacion */
 }
 main{
     display: grid;
-    background-color:var(--back1);
+    background-color:var(--color1);
 }
 h2 {
-    background: var(--color1);
+    background: var(--back1);
     color: rgb(0, 0, 0);
     margin: 0%;
     padding: 1rem;
@@ -74,8 +75,7 @@ article{
     margin: 1rem;
     padding: 1rem;
     justify-content: center;
-    justify-items: center;
-    background-color: rgba(151, 204, 234, 0.292);
+    background-color: var(--back2);
     border-radius: 1rem;
 }
 article>h2,p{
@@ -85,12 +85,25 @@ footer{
     display: grid;
     padding: 1rem;
     justify-content: center;
-    background-color: var(--color1);
+    background-color: var(--back1);
 }
 h4{
     margin-bottom: 1rem;
     text-align: center;
     color: rgb(0, 0, 0);
+}
+.fondo{
+    width: 100%;
+    height: 40rem;
+}
+.logo{
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    left: 4rem;
+    top: 24rem;
+    /* background-color: var(--color1); */
+    /* border-radius: 1rem; */
 }
 .redes{
     display: grid;
@@ -101,21 +114,12 @@ h4{
     padding: 0.5rem;
     font-size: 1rem;
     margin: 0.2rem;
-    color: rgb(255, 250, 219);
-    color: var(--color2);
+    color: var(--color1);
 }
 .redes a:hover{
     padding: 0.5rem;
-    color: var(--color1);
-    background-color: var(--color2);
+    color: var(--color2);
+    background-color: var(--color1);
     border-radius: 1rem;
-    box-shadow: 1px 1px 5px 2px rgba(86, 183, 175, 0.41);
+    box-shadow: 1px 1px 5px 2px rgba(255, 241, 153, 0.41);
 }
-.header{
-    background-image: url("/src/img/hockey1.jpg");
-    width: 100%;
-    height: 30%;
-}
-/* .logo{
-
-} */
