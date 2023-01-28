@@ -61,6 +61,7 @@ a:hover{
 }
 main{
     display: grid;
+    /* fijarme si cambia algo al sacar el grid este */
     background-color:var(--color1);
 }
 h2 {
