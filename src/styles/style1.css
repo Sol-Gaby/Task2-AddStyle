@@ -4,6 +4,7 @@
     padding: 0%;
     /* box-sizing: border-box; */
     font-family:'Comic Neue', cursive;
+    color: black;
 }
 :root{
 --color1:rgb(255, 204, 0);
@@ -13,29 +14,28 @@
 }
 header{
     width: 100%;
-    display: grid;
 }
-figure{
-    display: grid;
-    grid-row: 3/3;
-    justify-content: end;
-}
-h1{
+h1 {
     margin: 0.5em;
-    font-size: 2.5rem;
-}
-h2{
-    background: black;
-    color: white;
-    margin: 0%;
-    padding: 1rem;
+    font-size: 3rem;
+    color: var(--color1);
+    text-shadow: 0.5rem 0.5rem 0.1rem black;
+    text-transform: uppercase;
     text-align: center;
+    font-weight: bolder;
+    position: absolute;
+    top: 1rem;
+    /* grid-row: 1/1; */
 }
-header>nav{
-    display: flex;
-    margin: 0.5rem;
-    flex-direction: column;
-    align-items: flex-start;
+header>figure{
+    object-fit: contain;
+}
+nav{
+    margin: 1rem;
+    position: absolute;
+    display: grid;
+    top: 49rem;
+    left: 1rem;
 }
 nav>a{
     padding: 0.5rem;
@@ -43,82 +43,81 @@ nav>a{
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    color:   rgb(0, 154, 144);
-    background-color: rgba(9, 106, 106, 0.108);
-    box-shadow: 0px 2px 10px 0px black;
-    grid-row: 3/2;
+    color: black;
 }
-nav>a:hover{
-    color: rgb(255, 208, 0);
-    background-color: rgba(0, 125, 117, 0.593);
+a{
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+a:hover{
+    color: var(--color2);
+    background-color: var(--color1);
+    margin: 0.9rem;
+    /* despus quitar este margin que da ilucion de animacion */
 }
 main{
-    background: rgb(255, 215, 170);
-}
-main>article{
     display: grid;
+    background-color:var(--color1);
+}
+h2{
+    color: white;
+    background-color: black;
+    margin: 0%;
     padding: 1rem;
-}
-h3{
-    grid-column: 1/2;
-    padding: 2rem;
     text-align: center;
 }
-p{
-    grid-column: 2/2;
-    text-align: center;
-    align-self: center;
+article{
+    display: grid;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    background-color: var(--back2);
+    border-radius: 1rem;
+}
+article>h3,p{
+    margin: 1rem;
 }
 footer{
     display: grid;
     padding: 1rem;
-    background: rgb(255, 219, 90);
+    justify-content: center;
+    background-color: var(--back1);
 }
 h4{
     text-align: center;
     color: white;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
     padding: 0.5rem;
 }
-footer>div{
-    margin: 1rem;
-    display: grid;
-    grid-column: auto;
-    justify-content: center;
-}
-.header{
-    background-image: url("/src/img/hockey1.jpg");
+.fondo{
     width: 100%;
-    height: 30%;
-}
-/* header>div{
-    display: flex;
-} */
-figure>.fondo{
-    background-image: url("/src/img/hockey1.jpg");
-    object-fit: contain;
+    height: 40rem;
 }
 .logo{
-    width: 6rem;
-    height: 6rem;
-    justify-items: end;
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 18rem;
+    right: 4rem;
+    /* background-color: var(--color1); */
+    /* border-radius: 1rem; */
 }
-/* .nav-bar{
-    display: block;
-} */
-.redes a{
-    text-decoration: none;
+.redes{
+    justify-items: center;
     text-align: center;
-    margin: 0.4rem;
-    padding: 0.2rem;
-    color: rgb(255, 149, 0);
-    box-shadow: 0px 2px 10px 0px rgba(255, 246, 150, 0.733);
-    background-color: rgba(255, 217, 3, 0.655);
+}
+.redes a{
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0.2rem;
+    color: var(--color1);
 }
 .redes a:hover{
-    color: rgb(0, 107, 113);
-    background-color: rgba(255, 235, 121, 0.655);
-}
-.autor{
-    padding: 1rem;
+    color: var(--color2);
+    background-color: var(--color1);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 2px rgba(255, 241, 153, 0.41);
 }
