@@ -53,12 +53,7 @@ main {
     top: 25rem;
 }
 
-<<<<<<< HEAD
-h2 {
-=======
 h2{
-
->>>>>>> 3a487143fc95b72247cfc780f9a8f4256393ee2d
     color: white;
     background-color: black;
     margin: 0%;
@@ -75,8 +70,7 @@ main>article {
     border-radius: 1rem;
 }
 
-article>h3,
-p {
+article>h3,p {
     margin: 2rem;
     text-align: end;
 }
@@ -99,9 +93,9 @@ footer {
 h4 {
     margin-bottom: 1rem;
     padding: 0.3rem;
-    background: var(--color1);
-    border-radius: 0,5rem;
-    color: var(--back1);
+    background: var(--color2);
+    border-radius: 0.5rem;
+    color: var(--color1);
 }
 
 footer>div {
@@ -136,7 +130,7 @@ a{
     padding: 0.5rem;
     border-radius: 0.5rem;
     position: absolute;
-    top: 5.5rem;
+    top: 6.5rem;
     left: 6rem;
     background-color: var(--color1);
 }
