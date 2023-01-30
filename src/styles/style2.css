@@ -22,7 +22,7 @@ h1 {
     /* margin: 0.5em; */
     padding: 0.5rem;
     font-size: 2.5rem;
-    color: var(--color1);
+    color: var(--colorS2-1);
     text-shadow: 0.5rem 0.5rem 0.1rem black;
     text-transform: uppercase;
     font-weight: bolder;
@@ -35,8 +35,8 @@ header>figure{
 }
 nav{
     margin: 1rem;
-    position: absolute;
-    top: 1.5rem;
+    position: fixed;
+    top: 0.5rem;
     right: 1rem;
     /* grid-row: 1/3; */
     align-items: flex-start;
@@ -44,7 +44,7 @@ nav{
 nav>a{
     margin: 1rem;
     padding: 0.5rem;
-    background-color: var(--colorS2-2);
+    background-color: var(--colorS2-1);
     border-radius: 0.5rem;
 }
 a{
@@ -54,10 +54,9 @@ a{
     font-weight: bolder;
 }
 a:hover{
-    color: var(--color2);
-    background-color: var(--colorS2-1);
-    margin: 0.9rem;
-    /* despus quitar este margin que da ilucion de animacion */
+    color: var(--colorS2-1);
+    background-color: var(--backS2-1);
+    border-radius: 0.5rem;
 }
 /* main{
     display: grid;
@@ -108,17 +107,13 @@ aside{
 }
 form {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
-label {
-    padding: 1rem;
-}
-
 input {
-    margin: 3rem;
-    width: 40%;
+    margin: 2rem;
+    width: 80%;
     height: 8rem;
     border-radius: 0.5rem;
 }
@@ -128,9 +123,13 @@ button {
     margin: 0.5rem;
     padding: 0.3rem;
     font-size: 1rem;
-    color: var(--back2);
-    background-color: var(--back1);
+    color: var(--backS2-2);
+    background-color: var(--backS2-1);
     border-radius: 0.5rem;
+}
+button:hover{
+    color: var(--backS2-1);
+    background-color: var(--backS2-2);
 }
 .fondo{
     width: 100%;
@@ -140,19 +139,19 @@ button {
     width: 8rem;
     height: 8rem;
     position: absolute;
-    left: 4rem;
-    top: 25rem;
+    left: 1rem;
+    top: 23rem;
     /* background-color: var(--color1); */
     /* border-radius: 1rem; */
 }
 .logoAbout{
     position: relative;
-    top: 21.5rem;
-    left: 0rem;
+    top: 22rem;
+    left: 1rem;
 }
 .redes{
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
 }
 .redes a{
     grid-column: auto;
@@ -170,9 +169,11 @@ button {
 }
 .mainAbout{
     text-align: start;
-    padding-left: 6rem;
+    padding-left: 0rem;
 }
 .contact {
+    margin: 0%;
+    margin-bottom: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }

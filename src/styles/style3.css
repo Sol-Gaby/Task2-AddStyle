@@ -76,10 +76,9 @@ main>article {
     border-radius: 1rem;
 }
 
-article>h3,
-p {
+article>h3,p {
     margin: 2rem;
-    text-align: end;
+    text-align: center;
 }
 
 aside {
@@ -94,6 +93,8 @@ footer {
     background-color: var(--back2);
     flex-direction: column;
     align-items: center;
+    border-top: 0.5rem;
+    border-top-style: solid;
     /* top: 6rem; */
 }
 
@@ -128,7 +129,7 @@ label {
 
 input {
     margin: 3rem;
-    width: 40%;
+    width: 60%;
     height: 8rem;
     border-radius: 0.5rem;
 }
@@ -138,11 +139,14 @@ button {
     margin: 0.5rem;
     padding: 0.3rem;
     font-size: 1rem;
-    color: var(--back2);
-    background-color: var(--back1);
+    color: var(--back1);
+    background-color: var(--color1);
     border-radius: 0.5rem;
 }
-
+button:hover{
+    color: var(--back2);
+    background-color: var(--back1);
+}
 .fondo {
     position: relative;
     width: 100%;
@@ -172,7 +176,7 @@ button {
 }
 
 .home {
-    padding-right: 4rem;
+    padding-left: 20rem;
 }
 
 #pieAbout {
@@ -186,5 +190,13 @@ button {
 }
 
 .contact {
+    text-align: center;
+    padding-left: 24rem;
+}
+.AboutS3{
+    color: white;
+    background-color: black;
+    margin: 0%;
+    padding: 1rem;
     text-align: center;
 }
