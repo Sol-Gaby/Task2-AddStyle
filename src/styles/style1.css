@@ -192,3 +192,6 @@ button:hover{
 .formCont{
     padding-left: 19rem;
 }
+.mod2, .mod3{
+    display: none;
+}

@@ -200,3 +200,6 @@ button:hover{
     padding: 1rem;
     text-align: center;
 }
+.mod1, .mod2{
+    display: none;
+}

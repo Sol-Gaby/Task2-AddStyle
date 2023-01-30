@@ -177,3 +177,6 @@ button:hover{
     display: flex;
     justify-content: flex-start;
 }
+.mod1, .mod3{
+    display: none;
+}
