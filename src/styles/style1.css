@@ -108,8 +108,9 @@ aside{
 }
 form {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    padding-left: 20rem;
 }
 
 label {
@@ -117,8 +118,8 @@ label {
 }
 
 input {
-    margin: 3rem;
-    width: 40%;
+    margin: 1rem;
+    width: 60%;
     height: 8rem;
     border-radius: 0.5rem;
 }
@@ -128,8 +129,13 @@ button {
     margin: 0.5rem;
     padding: 0.3rem;
     font-size: 1rem;
-    background-color: var(--backS3-1);
+    color: var(--colorS3-2);
+    background-color: var(--colorS3-1);
     border-radius: 0.5rem;
+}
+button:hover{
+    color: var(--colorS3-2);
+    background-color: var(--backS3-1);
 }
 .fondo{
     width: 100%;
@@ -175,7 +181,14 @@ button {
 .navcontS1{
     top: 53rem;
 }
+.navAbout{
+    padding-top: 3rem;
+}
 .contact{
+    padding-left: 2rem;
     display: flex;
     justify-content: center;
+}
+.formCont{
+    padding-left: 19rem;
 }
