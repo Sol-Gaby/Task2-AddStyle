@@ -1,4 +1,4 @@
-# Task1-InitialWebite
+# Task2-InitialWebite
 
-Primera actividad para el curso de Front-End de MindHub. Se trata solo del armado del esqueleto de un sitio web
+Continuacion de la primera actividad para el curso de Front-End de MindHub. Aqui ya nos encontramos con el agregado de estilos mediante css basico.
 El repositorio se ira actualizando a medida que avance en el trabajo.
