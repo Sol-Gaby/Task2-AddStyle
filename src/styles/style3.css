@@ -37,6 +37,9 @@ nav>a {
     font-weight: bolder;
     margin: 0.5rem;
     padding: 0.5rem;
+    border: 2px solid var(--color1);
+    background-color: var(--color2);
+    border-radius: 0.7rem;
 }
 
 a:hover {
@@ -47,13 +50,15 @@ a:hover {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    position: absolute;
+    height: 100%;
     background-color: var(--color1);
-    top: 25rem;
+    /* top: 25rem; */
 }
 
-h2{
+h2 {
     color: white;
     background-color: black;
     margin: 0%;
@@ -62,15 +67,17 @@ h2{
 }
 
 main>article {
+    display: flex;
+    flex-direction: column;
     margin: 2rem;
     padding: 1rem;
-    padding-right: 4rem;
     justify-content: center;
     background-color: var(--back2);
     border-radius: 1rem;
 }
 
-article>h3,p {
+article>h3,
+p {
     margin: 2rem;
     text-align: end;
 }
@@ -87,7 +94,11 @@ footer {
     background-color: var(--back2);
     flex-direction: column;
     align-items: center;
-    top: 6rem;
+    /* top: 6rem; */
+}
+
+footer>div {
+    margin: 1rem;
 }
 
 h4 {
@@ -98,15 +109,40 @@ h4 {
     color: var(--color1);
 }
 
-footer>div {
-margin: 1rem;
-}
-a{
+a {
     color: var(--color2);
     text-decoration: none;
     font-size: 1rem;
     padding: 0.3rem;
 }
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    padding: 1rem;
+}
+
+input {
+    margin: 3rem;
+    width: 40%;
+    height: 8rem;
+    border-radius: 0.5rem;
+}
+
+button {
+    width: 5rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    color: var(--back2);
+    background-color: var(--back1);
+    border-radius: 0.5rem;
+}
+
 .fondo {
     position: relative;
     width: 100%;
@@ -125,12 +161,30 @@ a{
 
 .imagen_A {
     object-fit: contain;
-    width: 15rem;
-    height: 13rem;
-    padding: 0.5rem;
+    width: 30%;
+    margin-left: 1.5rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     position: absolute;
-    top: 6.5rem;
-    left: 6rem;
+    /* top: 6.5rem;
+    left: 6rem; */
     background-color: var(--color1);
+}
+
+.home {
+    padding-right: 4rem;
+}
+
+#pieAbout {
+    position: relative;
+    /* top: 24rem; */
+}
+
+#pieContacto {
+    position: relative;
+    /* top: 16rem; */
+}
+
+.contact {
+    text-align: center;
 }
